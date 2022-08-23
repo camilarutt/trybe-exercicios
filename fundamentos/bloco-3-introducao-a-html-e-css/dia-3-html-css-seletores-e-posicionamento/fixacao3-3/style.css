@@ -1,0 +1,15 @@
+.textos {
+  text-align: center;
+}
+
+li:hover {
+  background-color: brown;
+}
+
+li:active {
+  color:bisque;
+}
+
+ol, ul {
+  list-style: none
+}
