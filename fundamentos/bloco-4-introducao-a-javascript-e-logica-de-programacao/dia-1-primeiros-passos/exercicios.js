@@ -9,10 +9,10 @@ const divisao = a / b;
 const modulo = a % b;
 
 
-if (a > b) {
-    console.log(a);
+if (subtracao < 0) {
+    console.log("negative");
 }
 
-else if (b < a) {
-    console.log(b);
+else if (subtracao > 0) {
+    console.log("positive");
 }
