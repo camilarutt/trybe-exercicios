@@ -8,4 +8,11 @@ const multiplicacao = a * b;
 const divisao = a / b;
 const modulo = a % b;
 
-console.log(adicao, subtracao, multiplicacao, divisao, modulo);
+
+if (subtracao < 0) {
+    console.log("negative");
+}
+
+else if (subtracao > 0) {
+    console.log("positive");
+}
