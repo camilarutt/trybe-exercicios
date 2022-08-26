@@ -5,4 +5,12 @@ for (let index = 0; index < numbers.length; index += 1) {
     resultado += numbers[index];
   }
   
-  console.log(resultado / numbers.length + 1);
+let mediaArit = resultado / numbers.length + 1;
+
+  if (mediaArit > 20) {
+    console.log("Valor maior que 20");
+  }
+
+  else {
+    console.log("Valor menor ou igual a 20")
+  }
