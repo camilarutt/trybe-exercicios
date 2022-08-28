@@ -52,7 +52,7 @@ function nomeMaior(array) {
 
 console.log(nomeMaior(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
 
-function numRepete(array) {
+function numRepeteMais(array) {
 let maisRepete = 0;
 let repetiu = 0;
 let indexDoNum = 0;
@@ -75,3 +75,31 @@ let indexDoNum = 0;
 }
 
 console.log(numRepete([2, 3, 2, 5, 8, 2, 3]));
+
+// Exercicio 6
+function somaUmAteN (n) {
+    let resultado = 0;
+    for (i = 1; i <= n; i += 1) {
+        resultado += i;
+    }
+    return resultado;
+}
+
+console.log(somaUmAteN(5));
+
+//Exercicio 7
+function matchFinal(sWord, sEnd) {
+    let diferenca = sEnd.length - sWord.length;
+    let part = sWord.substr(-diferenca);
+
+    if (part == sEnd) {
+        return true;
+    }
+    else {
+    return false;
+    }
+}
+
+console.log(matchFinal('trybe', 'be'));
+console.log(matchFinal('joaofernando', 'fernan'));
+
