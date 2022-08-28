@@ -53,13 +53,25 @@ function nomeMaior(array) {
 console.log(nomeMaior(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
 
 function numRepete(array) {
-    let Duplicatas = array.filter((array[index], index).array.indexOf(item) != index);
-    for (i = 0; i < Duplicatas(array.length); i+=1) {
-    if (Duplicatas(array.length) > 1) {
-        Duplicatas = array.filter((item, index).array.indexOf(item) != index)
+let maisRepete = 0;
+let repetiu = 0;
+let indexDoNum = 0;
+
+    for (let index in array) {
+        let numeroDaVez = array[index];
+        // Define o número que irá passar comparando
+        for (let index2 in array) {
+            if (numeroDaVez === array[index2]) {
+                repetiu += 1;
+            }
+        }
+        if (repetiu > maisRepete) {
+            maisRepete = repetiu;
+            indexDoNum = index;
+        }
+        repetiu = 0;
     }
-}
-return Duplicatas(array[0]);
+    return array[indexDoNum];
 }
 
 console.log(numRepete([2, 3, 2, 5, 8, 2, 3]));
