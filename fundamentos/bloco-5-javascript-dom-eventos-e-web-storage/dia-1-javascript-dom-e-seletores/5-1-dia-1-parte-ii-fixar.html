@@ -3,9 +3,9 @@
   <body>
     <header>
       <h2 id="page-title">Título</h2>
-      <p id="paragraph" style="color:blue">Dê uma cor para este parágrafo!</p>
+      <p class = "cavalo" id="paragraph" style="color:blue">Dê uma cor para este parágrafo!</p>
       <h4 id="subtitle">Subtítulo</h4>
-      <p id="second-paragraph">Segundo parágrafo!</p>
+      <p class = "cavalo" id="second-paragraph">Segundo parágrafo!</p>
     </header>
     <script>
       const paragraph = document.getElementById("paragraph");
@@ -14,7 +14,19 @@
       const title = document.getElementById("page-title")
       title.style.backgroundColor = "blue";
 
-      document.getElementById("subtitle").style.color = "red";
+
+      //innerHTML innexText
+      //getElementsByClassNames("name")[X].XXX.XX
+      //variavel = getElementsByClassNames("");
+      //for (i = 0; i < name; i += 1) {name[i].method.etc}
+
+      //getElementsByTag -> devolve em lista
+
+      let cavalo = document.getElementsByClassName("cavalo");
+      cavalo[0].textContent =  "Cavalo";
+      
+      document.getElementsByTagName("h4")[0].style.color = "red";
+
     </script>
   </body>
 </html>
